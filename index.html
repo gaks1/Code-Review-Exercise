@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <main id="main-doc">
+
+    <div id="left-part">
+      <nav id="navbar">
+        <header>
+          <h1>Java Documentation</h1>
+        </header>
+        <ul id="menu-list">
+          <hr />
+          <li><a href="#introduction" class="nav-link">Introduction</a></li>
+          <hr />
+          <li><a href="#trademark" class="nav-link">Trademark</a></li>
+          <hr />
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <hr />
+          <li><a href="#syntax" class="nav-link">Syntax</a></li>
+          <hr />
+          <li><a href="#development_tools" class="nav-link">Development Tools</a></li>
+          <hr />
+        </ul>
+      </nav>
+    </div>
+
+    <div id="right-part">
+      <section class="main-section">
+        <header id="introduction">
+          <h1>Introduction</h1>
+        </header>
+        <p>
+          JavaScript, often abbreviated as JS, is a programming language that is one of the core
+          technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the
+          client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a
+          dedicated JavaScript engine to execute the code on users' devices.
+
+          JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[10]
+          It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm,
+          supporting event-driven, functional, and imperative programming styles. It has application programming
+          interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the
+          Document
+          Object Model (DOM).
+        </p>
+
+        <p>
+          The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics
+          facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.
+
+          JavaScript engines were originally used only in web browsers, but are now core components of some servers and
+          a
+          variety of applications. The most popular runtime system for this usage is Node.js.
+
+          Although Java and JavaScript are similar in name, syntax, and respective standard libraries, the two languages
+          are distinct and differ greatly in design.
+        </p>
+        <h2>Example: Compute Quotient and Remainder</h2>
+        <code>
+          public class QuotientRemainder {
+  
+            public static void main(String[] args) {
+          
+              int dividend = 25, divisor = 4;
+          
+              int quotient = dividend / divisor;
+              int remainder = dividend % divisor;
+          
+              System.out.println("Quotient = " + quotient);
+              System.out.println("Remainder = " + remainder);
+            }
+          }
+        </code>
+
+        <code>
+          25 / 4 // results 6.5
+          // convert 6.5 to integer
+          // output will be 6
+        </code>
+      </section>
+
+      <section class="main-section">
+        <header id="trademark">
+          <h1>Trademark</h1>
+        </header>
+        <p>
+          The use of JavaScript has expanded beyond its web browser roots. JavaScript engines are now embedded in a
+          variety
+          of other software systems, both for server-side website deployments and non-browser applications.
+        </p>
+
+        <p>
+          Initial attempts at promoting server-side JavaScript usage were Netscape Enterprise Server and Microsoft's
+          Internet Information Services,[40][41] but they were small niches.[42] Server-side usage eventually started to
+          grow in the late 2000s, with the creation of Node.js and other approaches.[42]
+        </p>
+
+        <p>
+          Electron, Cordova, React Native, and other application frameworks have been used to create many applications
+          with
+          behavior implemented in JavaScript. Other non-browser applications include Adobe Acrobat support for scripting
+          PDF
+          documents[43] and GNOME Shell extensions written in JavaScript.[44]
+        </p>
+
+        JavaScript has recently begun to appear in some embedded systems, usually by leveraging Node.js.[45][46][47]
+
+        <code>
+          5.5 is the largest number.
+        </code>
+      </section>
+
+
+      <section class="main-section">
+        <header id="features">
+          <h1>Features</h1>
+        </header>
+        <p>
+          JavaScript supports much of the structured programming syntax from C (e.g., if statements, while loops, switch
+          statements, do while loops, etc.). One partial exception is scoping: originally JavaScript only had function
+          scoping with var; block scoping was added in ECMAScript 2015 with the keywords let and const. Like C,
+          JavaScript
+          makes a distinction between expressions and statements. One syntactic difference from C is automatic semicolon
+          insertion, which allow semicolons (which terminate statements) to be omitted.[48]
+        </p>
+        <h2>Weakly typed</h2>
+        <ul>
+          <li>The binary + operator casts both operands to a string unless both operands are numbers. This is because
+            the
+            addition operator doubles as a concatenation operator</li>
+          <li>The binary - operator always casts both operands to a number</li>
+        </ul>
+
+        <code>
+          public class Largest {
+  
+            public static void main(String[] args) {
+        
+                double n1 = -4.5, n2 = 3.9, n3 = 2.5;
+        
+                if( n1 >= n2 && n1 >= n3)
+                    System.out.println(n1 + " is the largest number.");
+        
+                else if (n2 >= n1 && n2 >= n3)
+                    System.out.println(n2 + " is the largest number.");
+        
+                else
+                    System.out.println(n3 + " is the largest number.");
+            }
+        }
+        </code>
+      </section>
+
+      <section class="main-section">
+        <header id="syntax">
+          <h1>Syntax</h1>
+        </header>
+        <p>
+          Variables in JavaScript can be defined using either the var,[69] let[70] or const[71] keywords. Variables
+          defined
+          without keywords will be defined at the global scope.
+        </p>
+        <code>
+          <p>
+            // Declares a function-scoped variable named `x`, and implicitly assigns the
+            // special value `undefined` to it. Variables without value are automatically
+            // set to undefined.
+            var x;
+          </p>
+          <p>
+            // Variables can be manually set to `undefined` like so
+            var x2 = undefined;
+          </p>
+          <p>
+            // The keyword `const` means constant, hence the variable cannot be reassigned
+            // as the value is `constant`.
+            const z = "this value cannot be reassigned!";
+          </p>
+        </code>
+      </section>
+
+      <section class="main-section">
+        <header id="development_tools">
+          <h1>Development Tools</h1>
+        </header>
+        Important tools have evolved with the language. <br>
+        <ul>
+          <li> Every major web browser has built-in web development tools, including a JavaScript debugger. </li>
+          <li> Static program analysis tools, such as ESLint and JSLint, scan JavaScript code for conformance to a set
+            of
+            standards and guidelines. </li>
+          <li> Some browsers have built-in profilers. Stand-alone profiling libraries have also been created, such as
+            benchmark.js and jsbench. </li>
+          <li> Many text editors have syntax highlighting support for JavaScript code. </li>
+        </ul>
+        <code>
+          public class Largest {
+  
+            public static void main(String[] args) {
+        
+                double n1 = -4.5, n2 = 3.9, n3 = 5.5;
+        
+                if(n1 >= n2) {
+                    if(n1 >= n3)
+                        System.out.println(n1 + " is the largest number.");
+                    else
+                        System.out.println(n3 + " is the largest number.");
+                } else {
+                    if(n2 >= n3)
+                        System.out.println(n2 + " is the largest number.");
+                    else
+                        System.out.println(n3 + " is the largest number.");
+                }
+            }
+        }
+        </code>
+      </section>
+    </div>
+
+  </main>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
