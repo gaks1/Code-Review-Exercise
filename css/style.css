@@ -1,0 +1,29 @@
+@media screen and (max-width: 480px) {
+    main {
+        background-color: red;
+    }
+}
+
+#main-doc {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#left-part {
+    width: 20%;
+    border-right: 1px solid black;
+    margin-right: 40px;
+}
+
+#right-part {
+    width: 80%
+}
+
+#menu-list {
+    list-style-type: none;
+}
+
+#menu-list li a { 
+      text-decoration: none;
+}
